@@ -13,6 +13,14 @@ import DataBindingAttribute from "@/views/data-binding/DataBindingAttribute";
 import DataBindingButton from "@/views/data-binding/DataBindingButton";
 import DataBindingClass from "@/views/data-binding/DataBindingClass";
 import DataBindingStyle from "@/views/data-binding/DataBindingStyle";
+import DataBindingList from "@/views/data-binding/DataBindingList";
+import RenderingVIf from "@/views/data-binding/RenderingVIf";
+import RenderingVShow from "@/views/data-binding/RenderingVShow";
+import EventClick from "@/views/event/EventClick";
+import EventChange from "@/views/event/EventChange";
+import EventKey from "@/views/event/EventKey";
+import Computed from "@/views/event/Computed";
+import Watch from "@/views/event/Watch";
 
 Vue.use(VueRouter)
 
@@ -89,6 +97,46 @@ const routes = [
     path: '/data-binding/style',
     name: 'DataBindingStyle',
     component: DataBindingStyle
+  },
+  {
+    path: '/data-binding/list',
+    name: 'DataBindingList',
+    component: DataBindingList
+  },
+  {
+    path: '/data-binding/rendering-v-if',
+    name: 'RenderingVIf',
+    component: RenderingVIf
+  },
+  {
+    path: '/data-binding/rendering-v-show',
+    name: 'RenderingVShow',
+    component: RenderingVShow
+  },
+  {
+    path: '/event/click',
+    name: 'EventClick',
+    component: EventClick
+  },
+  {
+    path: '/event/change',
+    name: 'EventChange',
+    component: EventChange
+  },
+  {
+    path: '/event/key',
+    name: 'EventKey',
+    component: EventKey
+  },
+  {
+    path: '/event/computed',
+    name: 'Computed',
+    component: Computed
+  },
+  {
+    path: '/event/watch',
+    name: 'Watch',
+    component: Watch
   }
 ]
 
