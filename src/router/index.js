@@ -2,6 +2,7 @@ import {createRouter, createWebHistory} from 'vue-router'
 import Home from '../views/Home.vue'
 import RenderingVIf from "@/views/data-binding/RenderingVIf";
 import RenderingVShow from "@/views/data-binding/RenderingVShow";
+import MockDataBindingList from "@/views/mock/MockDataBindingList";
 
 const routes = [
   {
@@ -116,6 +117,11 @@ const routes = [
     path: '/event/watch',
     name: 'Watch',
     component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/event/Watch.vue')
+  },
+  {
+    path: '/mock/data-binding-list',
+    name: 'MockDataBindingList',
+    component: MockDataBindingList
   }
 ]
 
