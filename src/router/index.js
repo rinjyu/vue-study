@@ -162,6 +162,51 @@ const routes = [
     path: '/provide-inject',
     name: 'ProvideInjectParent',
     component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/provide-inject/ProvideInjectParent.vue')
+  },
+  {
+    path: '/calculator',
+    name: 'Calculator',
+    component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/composition/Calculator.vue')
+  },
+  {
+    path: '/composition1',
+    name: 'CompositionAPI1',
+    component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/composition/CompositionAPI1.vue')
+  },
+  {
+    path: '/composition2',
+    name: 'CompositionAPI2',
+    component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/composition/CompositionAPI2.vue')
+  },
+  {
+    path: '/composition3',
+    name: 'CompositionAPI3',
+    component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/composition/CompositionAPI3.vue')
+  },
+  {
+    path: '/composition4',
+    name: 'CompositionAPI4',
+    component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/composition/CompositionAPI4.vue')
+  },
+  {
+    path: '/composition-provide',
+    name: 'CompositionAPIProvide',
+    component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/composition/CompositionAPIProvide.vue')
+  },
+  {
+    path: '/custom-directive',
+    name: 'CustomDirective',
+    component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/composition/CustomDirective.vue')
+  },
+  {
+    path: '/mixins',
+    name: 'Mixins',
+    component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/composition/Mixins.vue')
+  },
+  {
+    path: '/plugins',
+    name: 'Plugins',
+    component: () => import( /* webpackChunkName: "plugins" */ '../views/composition/Plugins.vue')
   }
 ]
 
