@@ -1,6 +1,7 @@
 import {createApp} from 'vue'
 import App from './App.vue'
 import router from './router'
+import store from './store'
 import mixins from './mixins'
 import i18n from "@/plugins/i18n";
 
@@ -17,4 +18,5 @@ const app = createApp(App)
 app.use(router)
 app.mixin(mixins)
 app.use(i18n, i18nLanguage)
+app.use(store)
 app.mount('#app')

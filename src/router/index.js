@@ -207,6 +207,11 @@ const routes = [
     path: '/plugins',
     name: 'Plugins',
     component: () => import( /* webpackChunkName: "plugins" */ '../views/composition/Plugins.vue')
+  },
+  {
+    path: '/store-access',
+    name: 'StoreAccess',
+    component: () => import( /* webpackChunkName: "plugins" */ '../views/vuex/StoreAccess.vue')
   }
 ]
 
