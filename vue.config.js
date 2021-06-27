@@ -10,6 +10,9 @@ module.exports = {
             '^api': {
                 target,
                 changeOrigin: true
+            },
+            '/oauth2.0': {
+                target: 'https://nid.naver.com'
             }
         }
     }

@@ -212,6 +212,21 @@ const routes = [
     path: '/store-access',
     name: 'StoreAccess',
     component: () => import( /* webpackChunkName: "plugins" */ '../views/vuex/StoreAccess.vue')
+  },
+  {
+    path: '/login/kakao',
+    name: 'KakaoLogin',
+    component: () => import( /* webpackChunkName: "parent" */ '../views/login/KakaoLogin.vue')
+  },
+  {
+    path: '/login/naver',
+    name: 'NaverLogin',
+    component: () => import( /* webpackChunkName: "parent" */ '../views/login/NaverLogin.vue')
+  },
+  {
+    path: '/login/google',
+    name: 'GoogleLogin',
+    component: () => import( /* webpackChunkName: "parent" */ '../views/login/GoogleLogin.vue')
   }
 ]
 
